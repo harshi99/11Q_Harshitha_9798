@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Matching Pairs Test Result</title>
+</head>
+<body>
+  <h1>Elements Within Matching Pairs:</h1>
+  <ul>
+    {% for element in elements_within_pairs %}
+      <li>{{ element }}</li>
+    {% endfor %}
+  </ul>
+  
+  <h1>HTML Without Matching Pairs:</h1>
+  <div>
+    {{ html_without_pairs|safe }}
+  </div>
+</body>
+</html>
